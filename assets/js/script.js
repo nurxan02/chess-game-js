@@ -27,20 +27,20 @@ class ChessGame {
 
     this.pieces = {
       white: {
-        king: "♔",
-        queen: "♕",
-        rook: "♖",
-        bishop: "♗",
-        knight: "♘",
-        pawn: "♙",
+        king: "./assets/img/chess-figures/beyaz şah.svg",
+        queen: "./assets/img/chess-figures/beyaz vezir.svg",
+        rook: "./assets/img/chess-figures/beyaz kale.svg",
+        bishop: "./assets/img/chess-figures/beyaz fil.svg",
+        knight: "./assets/img/chess-figures/beyaz at.svg",
+        pawn: "./assets/img/chess-figures/beyaz piyon.svg",
       },
       black: {
-        king: "♚",
-        queen: "♛",
-        rook: "♜",
-        bishop: "♝",
-        knight: "♞",
-        pawn: "♟",
+        king: "./assets/img/chess-figures/siyah şah.svg",
+        queen: "./assets/img/chess-figures/siyah vezir.svg",
+        rook: "./assets/img/chess-figures/siyah kale.svg",
+        bishop: "./assets/img/chess-figures/siyah fil.svg",
+        knight: "./assets/img/chess-figures/siyah at.svg",
+        pawn: "./assets/img/chess-figures/siyah piyon.svg",
       },
     };
 
@@ -106,9 +106,11 @@ class ChessGame {
       square.innerHTML = "";
 
       if (piece) {
-        const pieceElement = document.createElement("div");
+        const pieceElement = document.createElement("img");
         pieceElement.className = `piece ${piece.color}`;
-        pieceElement.textContent = this.pieces[piece.color][piece.type];
+        pieceElement.src = this.pieces[piece.color][piece.type];
+        pieceElement.alt = `${piece.color} ${piece.type}`;
+        pieceElement.draggable = false;
         square.appendChild(pieceElement);
       }
     });
