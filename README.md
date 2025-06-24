@@ -180,9 +180,9 @@ Chess Master is fully responsive and provides an optimal experience across all d
 
 ### Connect
 
-- Portfolio: [Your Portfolio URL]
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
+- Portfolio: https://nurkhanmasimzada.site
+- LinkedIn: https://www.linkedin.com/in/nurxanmasimzade
+- GitHub: https://github.com/nurxan02
 
 ## 📄 License
 
