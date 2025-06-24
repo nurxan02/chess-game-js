@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Master • By Nurkhan Masimzada</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="theme-toggle">
+      <button id="themeToggle" class="theme-toggle-btn">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+
+    <div class="game-container">
+      <div class="main-content">
+        <h1>Chess Master</h1>
+        <div class="brand-subtitle">
+          <span>Designed by Nurkhan Masimzada</span>
+        </div>
+        <div class="game-info">
+          <div class="current-player">
+            <span id="current-player-text">White's Turn</span>
+          </div>
+          <div class="game-status">
+            <span id="game-status"></span>
+          </div>
+        </div>
+        <div class="chess-board" id="chessBoard"></div>
+      </div>
+
+      <div class="sidebar">
+        <h2>Move History</h2>
+        <div class="move-history" id="moveHistory">
+          <div class="history-header">
+            <span class="move-number">#</span>
+            <span class="white-move">White</span>
+            <span class="black-move">Black</span>
+          </div>
+          <div class="history-content" id="historyContent"></div>
+        </div>
+        <div class="game-controls">
+          <button id="resetButton" onclick="resetGame()">New Game</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="gameModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalMessage"></p>
+        <button id="modalButton" onclick="closeModal()">OK</button>
+      </div>
+    </div>
+
+    <footer class="copyright">
+      <p>&copy; 2025 Nurkhan Masimzada. All rights reserved.</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
